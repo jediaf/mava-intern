@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>   
+    <title>mava</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex; 
+            min-height: 100vh; 
+        }
+        #forgetPass:hover {
+            color:#8b8b8d;
+
+        }
+        button {
+            background-color: #3065e7;
+            border-radius: 12px;
+            height:32px;
+            padding: 10px;
+            color: white;
+
+        }
+        input[type="text"] {
+            border-radius: 5px;
+            padding: 12px;
+            width: 260px;
+        }
+        form {
+            width: 300px; 
+            margin-top: 232px;
+            margin-bottom: 232px;
+            margin-left: 80px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input[type="text"],
+        form input[type="button"] {
+            margin-bottom: 10px;
+        }
+    </style>    
+</head> 
+<body>
+    <img src="img/mava.jpeg" alt="mavaFoto" style="width: 66%; height: 100vh; object-fit: cover;">
+    <div style="display: flex; justify-content: space-between; max-width: 1200px; margin: 0 auto; padding: 20px; flex: 1;">
+        <form>
+            <img src="img/logo.jpeg" alt="mavaText">
+            <p>Hesabiniza tekrar hos geldiniz.</p>
+            <input type="text" name="E-posta adresi" placeholder="E-posta adresi">
+            <input type="text" name="Şifre" placeholder="Sifre">
+            <label>     
+                 <input type="checkbox" 
+                 name="Beni hatirla" placeholder="Beni Hatırla"> Beni hatirla
+            </label>
+            <p id="forgetPass">Parolanizi mi unuttunuz?</p>
+            <button type="button">Giris Yap</button>
+        </form>
+    </div>
+</body>
+</html>
